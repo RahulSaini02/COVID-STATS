@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&display=swap");
+
+.Content {
+  margin: 90px 0px 70px 80px;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+}
+.Content__text {
+  width: 50%;
+}
+
+.Content__Img {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+}
+.Content h2 {
+  font-size: 24px;
+  letter-spacing: 3px;
+  color: #fff;
+}
+.Content h1 {
+  font-size: 72px;
+  font-weight: bold;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 15px;
+  color: #e1202b;
+}
+.Content p {
+  font-size: 16px;
+  line-height: 25px;
+  margin: 50px 0;
+  color: #fff;
+}
+.Content button {
+  padding: 20px;
+  font-size: 14px;
+  border-radius: 50px;
+  outline-style: none;
+  border-color: #e1202b;
+  background: none;
+  color: #fff;
+  cursor: pointer;
+}
+.Content__more button {
+  display: flex;
+  justify-content: center;
+}
+.Content__more a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  align-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .Content h1 {
+    font-size: 28px;
+  }
+  .Content h2 {
+    font-size: 20px;
+  }
+  .Content p {
+    font-size: 14px;
+  }
+  .Content {
+    justify-content: space-between;
+  }
+}
