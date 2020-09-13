@@ -1,6 +1,5 @@
 import React from "react";
 import "./Home.css";
-import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import Circle from "./illustration.png";
 function Content() {
   return (
@@ -18,7 +17,6 @@ function Content() {
           <button>
             <a href="https://www.who.int/health-topics/coronavirus#tab=tab_1">
               Learn More
-              <ChevronRightIcon />
             </a>
           </button>
         </div>

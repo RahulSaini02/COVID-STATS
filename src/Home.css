@@ -1,13 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&display=swap");
 
 .Content {
-  margin: 90px 0px 70px 80px;
+  margin: 30px;
   font-family: "Montserrat", sans-serif;
   display: flex;
   justify-content: space-evenly;
-}
-.Content__text {
-  width: 50%;
 }
 
 .Content__Img {
@@ -33,7 +30,9 @@
   margin: 50px 0;
   color: #fff;
 }
-.Content button {
+.Content__more button {
+  display: flex;
+  justify-content: center;
   padding: 20px;
   font-size: 14px;
   border-radius: 50px;
@@ -43,10 +42,6 @@
   color: #fff;
   cursor: pointer;
 }
-.Content__more button {
-  display: flex;
-  justify-content: center;
-}
 .Content__more a {
   font-size: 18px;
   text-decoration: none;
@@ -54,17 +49,40 @@
   align-content: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
+  body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  .Content {
+    margin: 30px 0px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .Content__text {
+    flex: 1;
+  }
   .Content h1 {
-    font-size: 28px;
+    font-size: 22px;
   }
   .Content h2 {
     font-size: 20px;
   }
   .Content p {
     font-size: 14px;
+    line-height: 18px;
   }
-  .Content {
-    justify-content: space-between;
+  .Content_Img {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  .Content_Img img {
+    width: 250px;
+    height: 250px;
+  }
+  .Content__more button {
+    padding: 10px;
   }
 }

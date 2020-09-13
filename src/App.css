@@ -7,10 +7,8 @@
 }
 body {
   background: linear-gradient(to right, #111111, #370617);
-  height: auto;
 }
 .App {
-  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -21,7 +19,7 @@ body {
 .nav {
   display: flex;
   justify-content: space-between;
-  margin: 20px 35px;
+  margin: 20px;
 }
 .logo {
   width: 60%;
@@ -51,7 +49,6 @@ body {
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 3px;
-  text-transform: uppercase;
   padding: 20px;
   list-style: none;
 }
@@ -60,9 +57,30 @@ body {
   color: #fff;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 640px) {
   .App {
     display: flex;
     flex-direction: column;
+  }
+  .nav {
+    margin: 10px 15px;
+  }
+  .logo {
+    width: 50%;
+  }
+  .logo img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+  }
+  .logo h2 {
+    font-size: 12px;
+  }
+  .nav__links {
+    align-items: center;
+    justify-content: space-around;
+  }
+  .nav__links li {
+    font-size: 12px;
   }
 }

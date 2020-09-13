@@ -20,19 +20,19 @@
   color: #e1202b;
   font-weight: 600;
   font-size: 1.75rem;
-  margin-bottom: 0.5rem;
+  margin: 10px 0;
 }
 .infocases--green {
   color: #52b788;
   font-weight: 600;
   font-size: 1.75rem;
-  margin-bottom: 0.5rem;
+  margin: 10px 0;
 }
 .infocases--black {
   color: #343a40;
   font-weight: 600;
   font-size: 1.75rem;
-  margin-bottom: 0.5rem;
+  margin: 10px 0;
 }
 
 .infobox__total {
@@ -41,8 +41,19 @@
   font-size: 0.8rem !important;
   margin-top: 15px !important;
 }
-@media (max-width: 990px) {
+@media (max-width: 640px) {
   .info-box {
     flex: 1;
+  }
+  .infocases--red,
+  .infocases--green,
+  .infocases--black {
+    font-size: 14px;
+  }
+  .infobox--red,
+  .infobox--green,
+  .infobox--black {
+    font-size: 14px;
+    padding: 10px 0;
   }
 }
