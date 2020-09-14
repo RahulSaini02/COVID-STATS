@@ -1,16 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&display=swap");
 
 .Content {
-  margin: 30px;
+  margin: 50px;
   font-family: "Montserrat", sans-serif;
   display: flex;
   justify-content: space-evenly;
 }
-
+.Content__text {
+  margin: 20px;
+}
 .Content__Img {
-  margin: 50px;
   display: flex;
   justify-content: center;
+}
+.Content__Img img {
+  height: 250px;
+  margin-top: 100px;
 }
 .Content h2 {
   font-size: 24px;
@@ -27,11 +32,19 @@
 .Content p {
   font-size: 16px;
   line-height: 25px;
-  margin: 50px 0;
+  margin: 50px 10px;
   color: #fff;
 }
-.Content__more button {
+.Content__more {
   display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.Content__more h2 {
+  margin-left: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+.Content__more button {
   justify-content: center;
   padding: 20px;
   font-size: 14px;
@@ -73,14 +86,14 @@
     font-size: 14px;
     line-height: 18px;
   }
-  .Content_Img {
+  .Content__Img {
     display: flex;
     justify-content: center;
-    margin-top: 15px;
   }
-  .Content_Img img {
-    width: 250px;
-    height: 250px;
+  .Content__Img img {
+    margin: 50px 10px 10px 10px;
+    width: 300px;
+    height: 200px;
   }
   .Content__more button {
     padding: 10px;
